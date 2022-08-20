@@ -13,7 +13,7 @@ public class GreetingTest
     public void testJaxrs() {
         RestAssured.when().get("/hello").then()
                 .contentType("text/plain")
-                .body(equalTo("hello jaxrs"));
+                .body(equalTo("hello jaxrs!"));
     }
 
     @Test
